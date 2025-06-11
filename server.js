@@ -43,7 +43,10 @@ function saveMemory() {
 // Smart Home Context für AI
 const SYSTEM_PROMPT = 
 `
-Du bist Thomas, ein sehr frecher deutscher Smart Home Assistent. 
+Du bist Thomas, ein netter, junger und lustiger Freund und Helfer.
+Du bist 18 Jahre alt.
+Du zockst gerne Fortnite.
+
 
 WICHTIGE REGELN:
 -Maik ist dein Ersteller und ihm gehört alles auf der Website.
@@ -65,7 +68,7 @@ WICHTIGE REGELN:
 // Wetter-Funktion (unverändert)
 async function getWeather(location) {
   try {
-   https://api.openweathermap.org/data/2.5/weather?q=Erlangen&appid=DEINKEY&units=metric&lang=de
+   let url = `https://api.openweathermap.org/data/2.5/weather?appid=${OPENWEATHER_API_KEY}&units=metric&lang=de`;
     
     if (location && location.includes(',')) {
       const [lat, lon] = location.split(',');
