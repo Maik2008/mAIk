@@ -194,5 +194,4 @@ app.listen(PORT, () => {
   console.log("📊 API Status:");
   console.log("- Groq API Key:", GROQ_API_KEY && GROQ_API_KEY !== "your-groq-api-key-here" ? "✅ konfiguriert" : "❌ fehlt - bitte eintragen!");
   console.log("- OpenWeather API Key:", OPENWEATHER_API_KEY ? "✅ konfiguriert" : "❌ fehlt");
-  console.log("\n💡 Tipp: Ersetze 'your-groq-api-key-here' mit deinem echten Groq API Key!");
 });
