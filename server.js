@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname));
 
 // API Keys - REPLACE WITH YOUR ACTUAL KEYS
-const GROQ_API_KEY = "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"; // Replace with your Groq API key
+const GROQ_API_KEY = "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"; // Replace with your Groq API key
 const OPENWEATHER_API_KEY = "262d54aafd68eecde3c27de8e98185c3"; // Your weather key
 
 // Initialize Groq client
